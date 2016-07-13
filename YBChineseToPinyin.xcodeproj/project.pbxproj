@@ -15,6 +15,7 @@
 		0C72EDE81D3632BD00BB718C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C72EDE61D3632BD00BB718C /* LaunchScreen.storyboard */; };
 		0C72EDF31D3632BD00BB718C /* YBChineseToPinyinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C72EDF21D3632BD00BB718C /* YBChineseToPinyinTests.m */; };
 		0C72EDFE1D3632BD00BB718C /* YBChineseToPinyinUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C72EDFD1D3632BD00BB718C /* YBChineseToPinyinUITests.m */; };
+		0C72EE0F1D36332400BB718C /* NSString+YBChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C72EE0E1D36332400BB718C /* NSString+YBChineseToPinyin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		0C72EDF91D3632BD00BB718C /* YBChineseToPinyinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YBChineseToPinyinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C72EDFD1D3632BD00BB718C /* YBChineseToPinyinUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBChineseToPinyinUITests.m; sourceTree = "<group>"; };
 		0C72EDFF1D3632BD00BB718C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C72EE0D1D36332400BB718C /* NSString+YBChineseToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YBChineseToPinyin.h"; sourceTree = "<group>"; };
+		0C72EE0E1D36332400BB718C /* NSString+YBChineseToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YBChineseToPinyin.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		0C72EDD71D3632BD00BB718C /* YBChineseToPinyin */ = {
 			isa = PBXGroup;
 			children = (
+				0C72EE0C1D3632FB00BB718C /* YBChineseToPinyin */,
 				0C72EDDB1D3632BD00BB718C /* AppDelegate.h */,
 				0C72EDDC1D3632BD00BB718C /* AppDelegate.m */,
 				0C72EDDE1D3632BD00BB718C /* ViewController.h */,
@@ -138,6 +142,15 @@
 				0C72EDFF1D3632BD00BB718C /* Info.plist */,
 			);
 			path = YBChineseToPinyinUITests;
+			sourceTree = "<group>";
+		};
+		0C72EE0C1D3632FB00BB718C /* YBChineseToPinyin */ = {
+			isa = PBXGroup;
+			children = (
+				0C72EE0D1D36332400BB718C /* NSString+YBChineseToPinyin.h */,
+				0C72EE0E1D36332400BB718C /* NSString+YBChineseToPinyin.m */,
+			);
+			path = YBChineseToPinyin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +285,7 @@
 			files = (
 				0C72EDE01D3632BD00BB718C /* ViewController.m in Sources */,
 				0C72EDDD1D3632BD00BB718C /* AppDelegate.m in Sources */,
+				0C72EE0F1D36332400BB718C /* NSString+YBChineseToPinyin.m in Sources */,
 				0C72EDDA1D3632BD00BB718C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

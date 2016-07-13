@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSString+YBChineseToPinyin.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *string = @"你这么牛怎么不上天呢";
+    
+    //全拼+空格
+    NSLog(@"全拼+空格: %@",[string yb_pinyinParseWithSpace:YES]);
+    
+    //全拼无空格
+    NSLog(@"全拼无空格: %@",[string yb_pinyinParseWithSpace:NO]);
+    
+    //简拼
+    NSLog(@"简拼: %@",[string yb_letterPinyinFromChinese]);
+    
+    //首字母
+    NSLog(@"首字母: %@",[string yb_sortByFirstChinese]);
 }
 
 - (void)didReceiveMemoryWarning {
